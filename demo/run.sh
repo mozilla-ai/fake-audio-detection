@@ -20,7 +20,9 @@ stopRunningProcess() {
 
 trap stopRunningProcess EXIT TERM
 
-streamlit run ${HOME}/document-to-podcast/demo/app.py &
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+streamlit run "$SCRIPT_DIR/app.py" &
 APP_ID=${!}
 
 wait ${APP_ID}
