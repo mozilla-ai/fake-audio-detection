@@ -11,6 +11,13 @@ dynamic = ["version"]
 dependencies = [
   "loguru",
   "streamlit",
+  "numpy",
+  "librosa",
+  "joblib",
+  "altair",
+  "seaborn",
+  "scikit-learn",
+  "pandas"
 ]
 
 [project.optional-dependencies]

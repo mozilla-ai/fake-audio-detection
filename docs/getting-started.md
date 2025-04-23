@@ -1,9 +1,20 @@
-Get started with this Blueprint using one of the options below:
+Our interactive Streamlit demonstration provides a quick way to explore the blueprint's capabilities.
 
----
+### Installation
 
-### **Option 1:**
+First, install all required dependencies:
 
+```bash
+pip install .
+```
 
+### Running the Demo
 
-###  **Option 2:**
+Launch the demo application with the provided script:
+
+```bash
+# Execute from the blueprint root directory
+./demo/run.sh
+```
+
+The application will start automatically and open in your default web browser.
