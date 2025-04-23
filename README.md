@@ -8,8 +8,12 @@
     <img src="./images/Blueprint-logo-black.png" width="35%" alt="Project logo"/>
   </picture>
 </p>
-
-
+<p align="center">
+  <picture>
+    <!-- Fallback: default to the black logo -->
+    <img src="./images/uncovai-Mozzila.jpg" width="50%" alt="Project logo"/>
+  </picture>
+</p>
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
