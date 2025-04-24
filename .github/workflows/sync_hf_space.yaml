@@ -19,7 +19,8 @@ jobs:
       - name: Copy demo app and requirements
         run: |
           cp demo/app.py hf-space/app.py
-          cp demo/Dockerfile hf-space/Dockerfile
+          cp demo/normalization.py hf-space/normalization.py
+          cp demo/requirements.txt hf-space/requirements.txt
 
       - name: Check if there are any changes
         id: check_changes
