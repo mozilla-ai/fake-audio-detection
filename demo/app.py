@@ -5,11 +5,11 @@ import altair as alt
 
 import io
 import streamlit as st
+from fake_audio_detection.model import predict_audio_blocks
 
 parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(parent_dir)
 
-from src.blueprint.model import predict_audio_blocks
 
 st.title("🔎 DeepVoice Detection")
 

@@ -19,6 +19,7 @@ These docs are your companion to mastering this Blueprint.
 ### 🔍 **Understand the System**
 #### _Dive deeper into how the Blueprint works:_
 - **[Step-by-Step Guide](step-by-step-guide.md):** A detailed breakdown of the system’s design and workflow.
+- **[Results](results.md):** A detailed breakdown of the system’s design and workflow.
 - **[API Reference](api.md):** Explore the technical details of the core modules.
 
 ### 🎨 **Make It Yours**

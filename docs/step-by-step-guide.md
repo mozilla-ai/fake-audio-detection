@@ -30,7 +30,7 @@ Now that we have the dataset, you can create a simple Python file that uses the 
 ```python
 # audio-detection-trainer.py
 
-from blueprint.model import train_svm
+from fake_audio_detection.model import train_svm
 
 metrics = train_svm("path/to/dataset", ".")
 
@@ -44,7 +44,7 @@ To run it do
 
 ```bash
 cd src
-python3 -m blueprint.audio-detection-trainer
+python3 -m fake_audio_detection.audio-detection-trainer
 ```
 
 ## **Step 3: Update the Model Path**

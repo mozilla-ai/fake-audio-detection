@@ -13,7 +13,7 @@ pip install .
 Launch the demo application with the provided script:
 
 ```bash
-# Execute from the blueprint root directory
+# Execute from the fake_audio_detection root directory
 ./demo/run.sh
 ```
 
