@@ -21,7 +21,6 @@
 [![](https://dcbadge.limes.pink/api/server/YuMNeuKStr?style=flat)](https://discord.gg/YuMNeuKStr) <br>
 [![https://uncovai.com/](https://img.shields.io/badge/UncovAI-0071E5)](https://uncovai.com/) <br>
 [![Docs](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/docs.yaml/badge.svg)](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/docs.yaml/)
-[![Tests](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/tests.yaml/badge.svg)](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/tests.yaml/)
 [![Ruff](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/lint.yaml/badge.svg?label=Ruff)](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/lint.yaml/)
 
 [Blueprints Hub](https://developer-hub.mozilla.ai/)
