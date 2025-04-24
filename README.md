@@ -20,13 +20,13 @@
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![](https://dcbadge.limes.pink/api/server/YuMNeuKStr?style=flat)](https://discord.gg/YuMNeuKStr) <br>
 [![https://uncovai.com/](https://img.shields.io/badge/UncovAI-0071E5)](https://uncovai.com/) <br>
-[![Docs](https://github.com/mozilla-ai/blueprint-template/actions/workflows/docs.yaml/badge.svg)](https://github.com/mozilla-ai/blueprint-template/actions/workflows/docs.yaml/)
-[![Tests](https://github.com/mozilla-ai/blueprint-template/actions/workflows/tests.yaml/badge.svg)](https://github.com/mozilla-ai/blueprint-template/actions/workflows/tests.yaml/)
-[![Ruff](https://github.com/mozilla-ai/blueprint-template/actions/workflows/lint.yaml/badge.svg?label=Ruff)](https://github.com/mozilla-ai/blueprint-template/actions/workflows/lint.yaml/)
+[![Docs](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/docs.yaml/badge.svg)](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/docs.yaml/)
+[![Tests](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/tests.yaml/badge.svg)](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/tests.yaml/)
+[![Ruff](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/lint.yaml/badge.svg?label=Ruff)](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/lint.yaml/)
 
 [Blueprints Hub](https://developer-hub.mozilla.ai/)
-| [Documentation](https://mozilla-ai.github.io/Blueprint-template/)
-| [Getting Started](https://mozilla-ai.github.io/Blueprint-template/getting-started)
+| [Documentation](https://mozilla-ai.github.io/fake-audio-detection/)
+| [Getting Started](https://mozilla-ai.github.io/fake-audio-detection/getting-started)
 | [Contributing](CONTRIBUTING.md)
 
 </div>
