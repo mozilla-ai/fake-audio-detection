@@ -50,7 +50,7 @@ pip install .
 Run the demo using the `run.sh` script:
 
 ```bash
-# run this in the blueprint root directory
+# run this in the fake_audio_detection root directory
 ./demo/run.sh
 ```
 
