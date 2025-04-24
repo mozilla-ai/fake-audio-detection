@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 COPY .. /home/appuser/blueprint
 WORKDIR /home/appuser/blueprint
 
-RUN pip3 install /home/appuser/fake_audio_detection
+RUN pip3 install -r /home/appuser/blueprint/requirements.txt
 
 RUN groupadd --gid 1000 appuser \
     && useradd --uid 1000 --gid 1000 -ms /bin/bash appuser
@@ -18,4 +18,4 @@ RUN groupadd --gid 1000 appuser \
 USER appuser
 
 EXPOSE 8501
-ENTRYPOINT ["./demo/run.sh"]
+ENTRYPOINT ["streamlit", "run", "app.py", "--server.enableXsrfProtection", "false"]

@@ -65,25 +65,28 @@ if st.button("Run Prediction") and os.path.exists(MODEL_PATH):
 
         preds = probas.argmax(axis=1)
         confidences = probas.max(axis=1)
-
+        preds_as_string = ["Fake" if i == 0 else "Real" for i in preds]
         df = pd.DataFrame(
-            {"Time (s)": times, "Prediction": preds, "Confidence": confidences}
+            {"Seconds": times, "Prediction": preds_as_string, "Confidence": confidences}
         )
 
         def get_color(row):
             if row["Confidence"] < 0.3:
                 return "Uncertain"
-            return "Real" if row["Prediction"] == 1 else "Fake"
+            return row["Prediction"]
 
         df["Confidence Level"] = df.apply(get_color, axis=1)
 
         # Plot
         st.markdown("### Prediction by 1s Blocks")
+        st.markdown(
+            "Hover above each bar to see the confidence level of each prediction."
+        )
         chart = (
             alt.Chart(df)
             .mark_bar()
             .encode(
-                x=alt.X("Time (s):O", title="Time (s)"),
+                x=alt.X("Seconds:O", title="Seconds"),
                 y=alt.value(30),
                 color=alt.Color(
                     "Confidence Level:N",
@@ -92,18 +95,34 @@ if st.button("Run Prediction") and os.path.exists(MODEL_PATH):
                         range=["steelblue", "green", "gray"],
                     ),
                 ),
-                tooltip=["Time (s)", "Prediction", "Confidence"],
+                tooltip=["Seconds", "Prediction", "Confidence"],
             )
-            .properties(width=700, height=100)
+            .properties(width=700, height=150)
         )
 
         text = (
             alt.Chart(df)
-            .mark_text(align="center", baseline="middle", dy=5, color="white")
-            .encode(x=alt.X("Time (s):O"), y=alt.value(15), text="Prediction:Q")
+            .mark_text(
+                align="right",
+                baseline="top",
+                dy=10,
+                color="white",
+                xOffset=10,
+                yOffset=-20,
+                fontSize=14,
+            )
+            .encode(x=alt.X("Seconds:O"), y=alt.value(15), text="Prediction:N")
         )
 
         st.altair_chart(chart + text, use_container_width=True)
+
+        st.markdown("### Overall prediction")
+        if all(element == "Real" for element in preds_as_string):
+            st.markdown("The audio is **Real**")
+        elif all(element == "Fake" for element in preds_as_string):
+            st.markdown("The audio is **Fake**")
+        else:
+            st.markdown("Some parts of the audio have been detected as **Fake**")
 
 elif not os.path.exists(MODEL_PATH):
     st.warning(f"Missing model: {MODEL_PATH}")
