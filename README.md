@@ -31,7 +31,7 @@
 
 </div>
 
-# Lightweight Machine Learning for Audio Forgery Detection
+# Lightweight Machine Learning Method for Audio Forgery Detection
 
 This blueprint guides you through training and deploying a machine learning model that effectively detects synthetic and modified audio content.
 
@@ -39,7 +39,13 @@ The primary objective of this model is to provide a **lightweight alternative** 
 
 > **Warning:** Despite its advantages, this model has inherent limitations and may not detect all types of audio manipulations.
 
+
 ## Quick-start
+
+Try out our demo on HF Spaces: [![Try on Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Try%20on-Spaces-blue)](https://huggingface.co/spaces/mozilla-ai/fake-audio-detection)
+
+
+### Try it out the demo locally
 
 Install dependencies with pip:
 
@@ -54,66 +60,22 @@ Run the demo using the `run.sh` script:
 ./demo/run.sh
 ```
 
-### Demo Results
-
-Below you'll find our results with an SVM model trained on FOR_rerec and FOR_2sec datasets and tested on the InTheWild dataset ***(available [here](https://huggingface.co/datasets/UncovAI/InTheWild2))***. We can compare these results to those from the paper [MLAAD: The Multi-Language Audio Anti-Spoofing Dataset](https://arxiv.org/pdf/2401.09512).
-
-### Model Performance Comparison: All Models Trained on Identical Datasets
-| Model | Accuracy |
-|-------|----------|
-| **Our SVM** | **68.9%** |
-| SLL W2V2 | 57.8% |
-| Whisper DF | 54.1% |
-| RAWGAT-ST | 49.8% |
-
-**Performance Gain:** Our SVM model shows an improvement of at least 11% compared to the best model (SLL W2V2) reported in the [MLAAD paper](https://arxiv.org/pdf/2401.09512).
-
-*The InTheWild dataset is available [here](https://huggingface.co/datasets/UncovAI/InTheWild2).*
-
-----
-### detailed results
-#### 🔍 **Overall Metrics**
-
-|Metric|Value|
-|---|---|
-|Accuracy|0.6886|
-|Precision|0.6834|
-|Recall|0.6886|
-|F1 Score|0.6801|
-|ROC AUC|0.7484|
-|Error Rate|0.3114|
-
-#### 🧾 **Classification Report**
-
-|Class|Label|Precision|Recall|F1 Score|Support|
-|---|---|---|---|---|---|
-|0|Fake|0.7068|0.8142|0.7568|46,966|
-|1|Real|0.6490|0.5042|0.5675|31,991|
-
 
 ## How It Works
 
-This demo uses an SVM model trained with FOR_rerec and FOR_2sec datasets. You can retrieve these datasets from our **[UncovAI HuggingFace page](https://huggingface.co/datasets/UncovAI/FOR-norm/tree/main)** to train your own model.
+This demo uses an SVM model trained with FOR_rerec and FOR_2sec datasets. You can retrieve these datasets from **[UncovAI's HuggingFace page](https://huggingface.co/datasets/UncovAI/FOR-norm/tree/main)** to train your own model. For a detailed guide, please check out the **[Step-by-step guide](https://mozilla-ai.github.io/fake-audio-detection/step-by-step-guide)**.
 
 ### Features Extraction
-In the `Blueprint/` folder, you'll find `extract_features.py`, which contains functions to extract features like MFCC, IMFCC, and spectral information from raw audio and datasets. There are **many features** you can add to improve model performance!
+
+In the `fake-audio-detection/` folder, you'll find `extract_features.py`, which contains functions to extract features like MFCC, IMFCC, and spectral information from raw audio and datasets. There are **many features** you can add to improve model performance!
 
 ### Training
+
 `model.py` contains the basics for training and making predictions using your model. You can modify it to find the best performance for your use case.
 
-## Pre-requisites
+### Results
 
-- **System requirements**:
-  - OS: Windows, macOS, or Linux
-  - Python 3.10 or higher
-  - Minimum RAM: 8GB
-  - Disk space: Not specified
-
-- **Dependencies**:
-  - All dependencies are listed in `pyproject.toml`
-
-
-## Troubleshooting
+For a detailed overview of the datasets and the results of this method, check out the **[Results](https://mozilla-ai.github.io/fake-audio-detection/results)** section.
 
 
 ## License
