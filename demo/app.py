@@ -79,6 +79,9 @@ if st.button("Run Prediction") and os.path.exists(MODEL_PATH):
 
         # Plot
         st.markdown("### Prediction by 1s Blocks")
+        st.markdown(
+            "Hover above each bar to see the confidence level of each prediction."
+        )
         chart = (
             alt.Chart(df)
             .mark_bar()
@@ -94,7 +97,7 @@ if st.button("Run Prediction") and os.path.exists(MODEL_PATH):
                 ),
                 tooltip=["Seconds", "Prediction", "Confidence"],
             )
-            .properties(width=700, height=100)
+            .properties(width=700, height=150)
         )
 
         text = (
