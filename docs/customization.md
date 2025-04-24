@@ -67,6 +67,3 @@ For better model performance, consider implementing:
 - Cross-validation strategies to prevent overfitting
 - Bayesian optimization for more efficient parameter search
 
-## 🤝 **Contributing to the Blueprint**
-
-Want to help improve or extend this Blueprint? Check out the **[Future Features & Contributions Guide](future-features-contributions.md)** to see how you can contribute your ideas, code, or feedback to make this Blueprint even better!
