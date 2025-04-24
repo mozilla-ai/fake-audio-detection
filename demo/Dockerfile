@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 COPY .. /home/appuser/blueprint
 WORKDIR /home/appuser/blueprint
 
-RUN pip3 install /home/appuser/fake_audio_detection
+RUN pip3 install git+https://github.com/mozilla-ai/fake-audio-detection.git
 
 RUN groupadd --gid 1000 appuser \
     && useradd --uid 1000 --gid 1000 -ms /bin/bash appuser
