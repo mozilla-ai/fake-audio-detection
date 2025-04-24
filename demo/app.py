@@ -113,5 +113,13 @@ if st.button("Run Prediction") and os.path.exists(MODEL_PATH):
 
         st.altair_chart(chart + text, use_container_width=True)
 
+        st.markdown("### Overall prediction")
+        if all(element == "Real" for element in preds_as_string):
+            st.markdown("The audio is **Real**")
+        elif all(element == "Fake" for element in preds_as_string):
+            st.markdown("The audio is **Fake**")
+        else:
+            st.markdown("Some parts of the audio have been detected as **Fake**")
+
 elif not os.path.exists(MODEL_PATH):
     st.warning(f"Missing model: {MODEL_PATH}")
