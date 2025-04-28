@@ -81,7 +81,3 @@ Congratulations! You can now test your model using Streamlit:
 ## 🎨 **Customizing the Blueprint**
 
 To better understand how you can tailor this Blueprint to suit your specific needs, please visit the **[Customization Guide](customization.md)**.
-
-## 🤝 **Contributing to the Blueprint**
-
-Want to help improve or extend this Blueprint? Check out the **[Future Features & Contributions Guide](future-features-contributions.md)** to see how you can contribute your ideas, code, or feedback to make this Blueprint even better!
