@@ -1,6 +1,6 @@
 # **Results: Comparison with other methods & metrics**
 
-Below you'll find our results with an SVM model trained on FOR_rerec and FOR_2sec datasets and tested on the InTheWild dataset ***(available [here](https://huggingface.co/datasets/UncovAI/InTheWild2))***. We can compare these results to those from the paper [MLAAD: The Multi-Language Audio Anti-Spoofing Dataset](https://arxiv.org/pdf/2401.09512).
+Below you'll find our results with an SVM model trained on FOR_rerec and FOR_2sec datasets and tested on the InTheWild dataset ***(available [here](https://huggingface.co/datasets/UncovAI/InTheWild))***. We can compare these results to those from the paper [MLAAD: The Multi-Language Audio Anti-Spoofing Dataset](https://arxiv.org/pdf/2401.09512).
 
 ### Model Performance Comparison: All Models Trained on Identical Datasets
 | Model | Accuracy |
