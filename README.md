@@ -64,7 +64,7 @@ Run the demo using the `run.sh` script:
 
 ## How It Works
 
-This demo uses an SVM model trained with FOR_rerec and FOR_2sec datasets. You can retrieve these datasets from **[UncovAI's HuggingFace page](https://huggingface.co/datasets/UncovAI/FOR-norm/tree/main)** to train your own model. For a detailed guide, please check out the **[Step-by-step guide](https://mozilla-ai.github.io/fake-audio-detection/step-by-step-guide)**.
+This demo uses an SVM model trained with FOR_rerec and FOR_2sec datasets. You can retrieve these datasets from **[UncovAI's HuggingFace page](https://huggingface.co/UncovAI)** to train your own model. For a detailed guide, please check out the **[Step-by-step guide](https://mozilla-ai.github.io/fake-audio-detection/step-by-step-guide)**.
 
 ### Features Extraction
 
