@@ -21,7 +21,7 @@
 [![](https://dcbadge.limes.pink/api/server/YuMNeuKStr?style=flat)](https://discord.gg/YuMNeuKStr) <br>
 [![https://uncovai.com/](https://img.shields.io/badge/UncovAI-0071E5)](https://uncovai.com/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-f7931e?logo=scikit-learn&logoColor=white)](https://github.com/scikit-learn/scikit-learn)
-[![librosa](https://img.shields.io/badge/librosa-purple)]https://github.com/librosa/librosa) <br>
+[![librosa](https://img.shields.io/badge/librosa-purple)](https://github.com/librosa/librosa) <br>
 [![Docs](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/docs.yaml/badge.svg)](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/docs.yaml/)
 [![Ruff](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/lint.yaml/badge.svg?label=Ruff)](https://github.com/mozilla-ai/fake-audio-detection/actions/workflows/lint.yaml/)
 
