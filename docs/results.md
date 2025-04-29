@@ -7,7 +7,7 @@ Below you'll find our results with an SVM model trained on FOR_rerec and FOR_2se
 |-------|----------|
 | **Our SVM** | **68.9%** |
 | SLL W2V2 | 57.8% |
-| Whisper DF | 54.1% |
+| Whisper DF | 54.1%|
 | RAWGAT-ST | 49.8% |
 
 **Performance Gain:** Our SVM model shows an improvement of at least 11% compared to the best model (SLL W2V2) reported in the [MLAAD paper](https://arxiv.org/pdf/2401.09512).
